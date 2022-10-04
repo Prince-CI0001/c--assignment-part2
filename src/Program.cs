@@ -1,54 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace Assignment2
+﻿namespace Assignment2
 {
-    class Program
+    internal class Program
     {   
-        public static  void PilishStrings()
+        static  void PilishStrings()
         {
-            Pilish_Strings obj = new Pilish_Strings();
+            PilishStrings obj = new PilishStrings();
             string str = Console.ReadLine();
-            Console.WriteLine(obj.PublishString(str));
+            Console.WriteLine(obj.Pilist(str));
         }
-        public static void FairySequence()
+
+        static void FairySequence()
         {
             FairySequence obj = new FairySequence();
             int n = int.Parse(Console.ReadLine());
-            obj.Fairy_Sequence(n);
+            obj.Fairy(n);
             
         }
-        public static void LinearEquation()
+
+        static void LinearEquation()
         {
             LinearEquation obj = new LinearEquation();
             Console.WriteLine("Enter the Equation");
             string str = Console.ReadLine();
-            Console.WriteLine(obj.Linear_Equation(str));
+            Console.WriteLine(obj.SolveEquation(str));
         }
-        public static void LookAndSay()
+
+        static void LookAndSay()
         {
             LookAndSay obj = new LookAndSay();
             Console.WriteLine("Enter the starting Number");
             int start = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Length");
             int n = int.Parse(Console.ReadLine());
-            string[] arr = obj.Look_And_Say(start, n);
+            string[] arr = obj.LookSay(start, n);
             foreach (var i in arr)
             {
                 Console.WriteLine(i);
             }
 
         }
-        public static void NicoCipher()
+        static void NicoCipher()
         {
             NicoCipher obj = new NicoCipher();
             Console.WriteLine("Enter the Message");
             string msg = Console.ReadLine();
             Console.WriteLine("Enter Key");
             string key = Console.ReadLine();
-            Console.WriteLine(obj.Nico_Cipher(msg, key));
+            Console.WriteLine(obj.Cipher(msg, key));
 
         }
         static void Main()

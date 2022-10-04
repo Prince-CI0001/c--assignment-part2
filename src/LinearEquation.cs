@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using static System.Net.Mime.MediaTypeNames;
+﻿using System.Text.RegularExpressions;
 
 namespace Assignment2
 {
-    class LinearEquation
+    public class LinearEquation
     {
-        public string Linear_Equation(string eq)
+        public string SolveEquation(string eq)
         {
-            double result = 0;
+            double result;
 
             var split = eq.Split('=');
             var leftNums = getNums(split[0]);

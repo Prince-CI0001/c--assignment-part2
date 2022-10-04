@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace Assignment2
+﻿namespace Assignment2
 {
-    class Pilish_Strings
+     public class PilishStrings
     {
-        public string PublishString(string str)
+        public string Pilist(string str)
         {
             int[] piStream = new int[] { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9 }; 
             string newStr = "";

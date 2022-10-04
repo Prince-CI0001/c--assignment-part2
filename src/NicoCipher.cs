@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualBasic;
-
-namespace Assignment2
+﻿namespace Assignment2
 {
     class NicoCipher
     {   
-        public char[,] matrix(string message, int rows,int cols)
+        private char[,] matrix(string message, int rows,int cols)
         {
             char[,] vs = new char[rows, cols];
             int iterator = 0;
@@ -30,26 +21,9 @@ namespace Assignment2
             }
             return vs;
         }
-        public string Nico_Cipher(string message,string key)
+        public string Cipher(string message,string key)
         {
-            //string helperKey = key;
-            //char[] tempArr = helperKey.ToCharArray();
-            //Array.Sort(tempArr);
-            //int[] index = new int[tempArr.Length];
-            //int count = 0;
-            //for(int i=0;i<key.Length;i++)
-            //{
-            //    if (index.Contains(Array.IndexOf(tempArr, key[i]) + 1))
-            //    {
-            //        count++;
-            //        index[i] = count;
-            //    }
-            //    else
-            //    {
-            //        count = Array.IndexOf(tempArr, key[i]) + 1;
-            //        index[i] = Array.IndexOf(tempArr, key[i]) + 1;
-            //    }
-            //}
+            //Giving sorted values to the key
              char[] key_char = key.ToCharArray();
 
              for(int i = 0; i < key_char.Length; i++)
