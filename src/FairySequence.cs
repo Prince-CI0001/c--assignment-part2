@@ -1,4 +1,4 @@
-﻿namespace Assignment2
+﻿namespace Csharp.Assignment2
 {
     public class FairySequence
     {

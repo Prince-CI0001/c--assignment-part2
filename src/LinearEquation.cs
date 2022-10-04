@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Assignment2
+namespace Csharp.Assignment2
 {
     public class LinearEquation
     {
